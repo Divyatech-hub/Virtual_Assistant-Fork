@@ -4,14 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-let chat = ReactDOM.createRoot(document.getElementById('chatMessages'));
-let sendButton = document.getElementById('sendButton');
-
-sendButton.onclick = () => {
-  chat.render(
-    <App />
-  );
-};
+ReactDOM.createRoot(document.getElementById('chatMessages')).render(<App />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
