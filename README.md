@@ -44,5 +44,3 @@ The system leverages the flexibility of **React Components** and **Hooks** for e
 This project demonstrates my ability to work with cutting-edge tools, solve complex problems, and deliver impactful solutions.
 
 ---
-
-**Interested in discussing how I can bring my skills to your team?** Let's connect!
