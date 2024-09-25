@@ -9,7 +9,7 @@ export default function BotMessage(props) {
     useEffect(() => {
         const GetResponse = async () => {
             try {
-                const result = await model.generateContent(props.prompt + "(Generate answer in regular text and not Markdown)");
+                const result = await model.generateContent(props.prompt);
                 console.log(result);
                 SetResponse(result.response.text());
             } catch (err) {
