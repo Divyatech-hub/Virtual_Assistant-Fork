@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import { marked } from "marked";
 
 export default function BotMessage(props) {
     const [response, SetResponse] = useState("Loading...");
@@ -22,7 +23,7 @@ export default function BotMessage(props) {
 
     return (
         <div class="message bot">
-            <div class="message-content">{response}</div>
+            <div class="message-content" dangerouslySetInnerHTML={{ __html: marked.parse(response)}} />
         </div>
     );
 }
