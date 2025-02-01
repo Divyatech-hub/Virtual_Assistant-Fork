@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Use the <div> with the ID of "chatMessages" to create a root to render elements into.
 ReactDOM.createRoot(document.getElementById('chatMessages')).render(<App />);
 
 // If you want to start measuring performance in your app, pass a function
